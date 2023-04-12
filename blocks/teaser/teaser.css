@@ -1,0 +1,54 @@
+.teaser > div+div{
+    display:grid;
+    background-color: var(--teaser-background-color);
+}
+
+.teaser{
+    margin: 20px 0px;
+}
+.teaser :first-child{
+    padding: 3px 0px;
+}
+
+
+.teaser div+div> :first-child{
+    padding: 10px 17px;
+}
+
+.teaser div+div> :last-child{
+    padding: 0px;
+    order:1;
+    grid-row: 1/2;
+    overflow: hidden;
+}
+.teaser h1,.teaser h2,.teaser h3,.teaser h4,.teaser h5,.teaser h6,.teaser p{
+    margin: 10px 0px;
+}
+.teaser p{
+    font-size: small;
+}
+
+
+@media (min-width: 600px) {
+   
+
+    .teaser > div+div{
+        grid-template-columns:  45% auto;
+    }
+
+    .teaser picture{
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+    }
+    .teaser picture img{
+        object-fit: cover;
+        height: 100%;
+    }
+
+    .teaser div+div> :last-child{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        
+    }
+}

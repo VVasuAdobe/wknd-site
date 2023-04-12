@@ -1,0 +1,56 @@
+.banner{
+    display:grid;
+}
+
+.banner h3{
+    margin: 10px 0px;
+}
+
+.banner div >div >p{
+    margin: 0 0;
+}
+.banner .button-container> a{
+    margin: 5px 0;
+}
+
+@media (min-width: 600px) {
+   
+  }
+  
+  @media (min-width: 900px) {
+    .banner{
+        position: relative;
+    }
+    
+    .banner picture {
+        height: 550px;
+        overflow: hidden;
+        
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+    
+    
+    
+    .banner picture img, .banner picture source{
+        object-fit: cover;
+    }
+    
+    .banner div+div{
+        background-color: white;
+        margin: 0 120px;
+        position: absolute;
+        bottom: 0px;
+        padding:0 20px;
+    }
+    
+    .banner div+div > div{
+        padding: 0;
+    }
+   
+  }
+
+
+
+
+
