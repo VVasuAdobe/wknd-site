@@ -13,6 +13,22 @@ import {
   loadCSS,
 } from './lib-franklin.js';
 
+
+function include(element,file) {
+      
+  var script = document.createElement('script');
+  script.src = file;
+  script.type = 'text/javascript';
+  script.defer = true;
+    
+  document.getElementsByTagName(element).item(0).appendChild(script);
+    
+  }
+
+  include('head','https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js');
+  include('body','//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js');
+  
+
 const LCP_BLOCKS = []; // add your LCP blocks to the list
 window.hlx.RUM_GENERATION = 'project-1'; // add your RUM generation information here
 

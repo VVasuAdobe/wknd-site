@@ -1,0 +1,41 @@
+.custom-columns > div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.custom-columns h2{
+  text-align: left;
+}
+.custom-columns img {
+  width: 100%;
+}
+
+.custom-columns > div > div {
+  order: 1;
+}
+
+.custom-columns > div > .custom-columns-img-col {
+  order: 0;
+}
+
+.custom-columns > div > .custom-columns-img-col img {
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 202px;
+  margin: auto;
+}
+
+@media (min-width: 900px) {
+  .custom-columns > div {
+    align-items: center;
+    flex-direction: unset;
+    gap: 32px;
+  }
+
+  .custom-columns > div > div {
+    flex: 1;
+    order: unset;
+  }
+}
