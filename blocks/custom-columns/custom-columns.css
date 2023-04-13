@@ -23,7 +23,8 @@
   display: block;
   width: 200px;
   height: 200px;
-  border-radius: 202px;
+  object-fit: cover;
+  border-radius: 200px;
   margin: auto;
 }
 

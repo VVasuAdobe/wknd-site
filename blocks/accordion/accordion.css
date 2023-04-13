@@ -1,0 +1,19 @@
+.accordion{
+    margin: 15px 0;
+}
+
+.accordion .acc_tab{
+   font-size: var(--body-font-size-s);
+   font-weight: 600;
+   padding: 10px;
+
+}
+
+.accordion .acc_tab_bottom{
+    border-bottom: solid 1px var(--highlight-background-color);
+}
+
+
+.accordion .acc_pannel{
+    display:none;
+}

@@ -228,14 +228,19 @@ header nav .nav-sections ul > li > ul > li {
     gap: 2em;
     margin: 0;
     font-size: var(--body-font-size-xs);
+    justify-content: flex-end;
   }
 
   header nav .nav-sections > ul > li {
+    padding:10px 5px;
     flex: 0 1 auto;
     position: relative;
     font-weight: 500;
   }
 
+  header nav .nav-sections > ul > li:hover {
+    background-color: var(--link-color);
+  }
   header nav .nav-sections > ul > li > ul {
     display: none;
     position: relative;
@@ -272,4 +277,13 @@ header nav .nav-sections ul > li > ul > li {
 /* tools */
 header nav .nav-tools {
   grid-area: tools;
+}
+
+
+/*custom styles*/
+
+@media (min-width: 900px) {
+  header .nav-sections{
+    text-align: right;
+  }
 }
