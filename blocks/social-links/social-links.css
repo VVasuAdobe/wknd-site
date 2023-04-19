@@ -1,0 +1,42 @@
+.social-links > div{
+    display:grid;
+    grid-template-columns: 100px 300px ;
+}
+.social-links > div > div:first-child img{
+    border-radius: 60px;
+    height: 90px;
+    width: 90px;
+    object-fit: cover;
+}
+
+.social-links > div > div:last-child img{
+    height: 30px;
+    width: 30px;
+    padding: 5px 10px;
+    object-fit: cover;
+}
+
+.social-links > div > div:last-child{
+    grid-column: 1/3;
+}
+
+.social-links h1,.social-links h2,.social-links h3,.social-links h4,.social-links h5,.social-links h6,.social-links p {
+    margin: 0 0;
+    padding: 0 20px;
+}
+
+.social-links p{
+    font-size: var(--body-font-size-xs);
+}
+
+
+@media (min-width: 900px) {
+
+    .social-links > div{
+        grid-template-columns: 100px 300px 200px;
+    }
+    .social-links > div > div:last-child{
+        grid-column: 3/4;
+    }
+    
+}
