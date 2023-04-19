@@ -45,6 +45,19 @@ footer .footer .columns img {
   height: auto;
 }
 
+.footer .follow-us img{
+  width: 30px;
+  height: 30px;
+  position: inherit;
+    top: 8px;
+
+}
+
+.footer .follow-us picture{
+  position: relative;
+  background-color: var(--highlight-background-color);
+  padding: 10px;
+}
 
 @media (min-width: 900px) {
 

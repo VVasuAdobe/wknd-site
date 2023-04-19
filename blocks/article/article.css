@@ -13,6 +13,10 @@
     color:var( --text-color);
 }
 
+.article a:hover{
+    text-decoration: none;
+}
+
 .article p{
     font-size: var( --body-font-size-xs);
 }
@@ -46,6 +50,6 @@
 
 @media (min-width: 900px) {
     .article .article-container{
-         grid-template-columns: repeat(4,260px);
+         grid-template-columns: repeat(4,280px);
     }
 }

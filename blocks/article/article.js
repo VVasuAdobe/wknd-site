@@ -12,7 +12,7 @@ export default function decorate(block) {
         block.append(wrapper);
     }
     function generateCard(item,index){
-        const card = `<div class="card card-${index}">
+        const card = `<div class="card" id="card-${index}">
                         <a href=${item.path}>
                             <picture>
                                 <source type="image/webp" srcset="${item.image}?width=2000&amp;format=webply&amp;optimize=medium" media="(min-width: 600px)">

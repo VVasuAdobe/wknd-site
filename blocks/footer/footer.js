@@ -6,6 +6,7 @@ import { readBlockConfig, decorateIcons } from '../../scripts/lib-franklin.js';
  */
 export default async function decorate(block) {
   const cfg = readBlockConfig(block);
+  console.log(cfg);
   block.textContent = '';
 
   // fetch footer content
@@ -18,8 +19,10 @@ export default async function decorate(block) {
     // decorate footer DOM
     const footer = document.createElement('div');
     footer.innerHTML = html;
-
     decorateIcons(footer);
     block.append(footer);
+
+    let followUs = footer.firstElementChild.firstElementChild.lastElementChild.firstElementChild;
+    followUs.classList.add("follow-us");
   }
 }
